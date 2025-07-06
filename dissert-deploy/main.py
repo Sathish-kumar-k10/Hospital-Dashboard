@@ -106,7 +106,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # --- Logo in top right corner ---
-logo_path = "assets/background-1.png"
+logo_path = "dissert-deploy/assets/background-1.png"
 logo_base64 = base64.b64encode(open(logo_path, "rb").read()).decode()
 st.markdown(
     f"""
