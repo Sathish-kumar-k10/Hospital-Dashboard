@@ -122,7 +122,8 @@ st.markdown('<div class="main-content">', unsafe_allow_html=True)
 # --- Data Loading ---
 @st.cache_data
 def load_patient_data():
-    df = pd.read_csv('final_patient_data_with_medication_8.csv')
+    url = "https://www.dropbox.com/scl/fi/6t39mmgx6uha3l7jv1sxb/final_patient_data_with_medication_8.csv?rlkey=ta0o4m5x56inor33t15kq1r7c&raw=1"
+    df = pd.read_csv(url)
     df['Admission_DateTime'] = pd.to_datetime(df['Admission_DateTime'], dayfirst=True, errors='coerce')
     df['Discharge_DateTime'] = pd.to_datetime(df['Discharge_DateTime'], dayfirst=True, errors='coerce')
     return df
