@@ -211,7 +211,7 @@ with tab1:
         total_cost = filtered_cost_df['Cost'].sum()
         avg_cost = filtered_cost_df.groupby('Patient_ID')['Cost'].sum().mean()
         deaths = filtered_cost_df[filtered_cost_df['Survive'] == 0].shape[0]
-        recovered = filtered_cost_df[filtered_cost_df['Outcome'] == 'Recovered'].shape[0]
+        recovered = filtered_cost_df[filtered_cost_df['Survive'] == 1].shape[0]
         readmissions = filtered_cost_df[filtered_cost_df['Readmission'] == 'Yes'].shape[0]
 
         col1, col2, col3 = st.columns(3)
