@@ -129,10 +129,13 @@ def load_patient_data():
     return df
 
 @st.cache_data
+@st.cache_data
 def load_monitoring_data():
-    df = pd.read_csv('patient_24hr_monitoring_data_30min.csv')
+    url = "https://www.dropbox.com/scl/fi/ed61m8ykbbg1bux5bsfjc/patient_24hr_monitoring_data_30min.csv?rlkey=x597uj3bln0tljh4heme9r6h8&raw=1"
+    df = pd.read_csv(url)
     df['Timestamp'] = pd.to_datetime(df['Timestamp'], dayfirst=True, errors='coerce')
     return df
+
 
 patient_data = load_patient_data()
 monitoring_data = load_monitoring_data()
