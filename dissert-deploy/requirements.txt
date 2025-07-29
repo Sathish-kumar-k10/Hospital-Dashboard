@@ -1,4 +1,7 @@
-streamlit
-pandas
-plotly
-
+streamlit==1.35.0
+pandas==2.2.2
+plotly==5.22.0
+transformers==4.41.1
+torch==2.3.0
+scikit-learn==1.5.0
+numpy==1.26.4
