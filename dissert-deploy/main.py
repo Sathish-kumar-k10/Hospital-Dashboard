@@ -115,7 +115,7 @@ if condition_filter:
 
 # ---------------------- Tabs ----------------------
 tab_pressures, tab1, tab2, tab3 = st.tabs(
-    ["⚠️ System Pressures", "🏥 Revenue & KPIs", "👨‍⚕️ Doctor Overview", "📊 Live Monitoring"]
+    ["⚠️ System Pressures", "🏥 Funding & KPIs", "👨‍⚕️ Doctor Overview", "📊 Live Monitoring"]
 )
 
 # =================================================================
@@ -280,7 +280,7 @@ with tab_pressures:
 # TAB 2: Hospital Revenue & KPI Overview
 # =================================================================
 with tab1:
-    st.header("Hospital Revenue & KPI Overview")
+    st.header("Hospital Funding & KPI Overview")
 
     col_filter1, col_filter2 = st.columns(2)
     with col_filter1:
