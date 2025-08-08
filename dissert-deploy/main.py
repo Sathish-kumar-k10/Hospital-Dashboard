@@ -12,7 +12,7 @@ import base64
 st.set_page_config(page_title="NHS Hospital Patient Dashboard", layout="wide")
 INPUT_CSV = "https://www.dropbox.com/scl/fi/6t39mmgx6uha3l7jv1sxb/final_patient_data_with_medication_8.csv?rlkey=ta0o4m5x56inor33t15kq1r7c&st=hk5buwpr&dl=0"   # change if needed
 MONITORING_CSV = "https://www.dropbox.com/scl/fi/ed61m8ykbbg1bux5bsfjc/patient_24hr_monitoring_data_30min.csv?rlkey=x597uj3bln0tljh4heme9r6h8&st=xc6iwljr&dl=0"
-LOGO_PATH = "assets/background-1.png"
+LOGO_PATH = "dissert-deploy/assets/background-1.png"
 
 # ---------------------- CSS ----------------------
 st.markdown("""
