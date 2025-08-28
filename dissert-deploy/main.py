@@ -231,7 +231,6 @@ with tab1:
         budget_sel = get_budget_year_total(dfp_year)
 
     funding_gap_sel = ((budget_sel - total_cost_sel) / budget_sel * 100) if budget_sel else 0.0
-a
     # Context
     staff_idx_avg = float(dfp_year["Staff_Shortage_Index"].dropna().mean() or 0)
     waiting_med_val = dfp_year["Waiting_List_Days"].dropna().median()
