@@ -11,7 +11,7 @@ ask questions and receive useful healthcare guidance through a friendly interfac
 ## Documentation
 For full details of the project (design, technology, results, screenshots),
 please read:
-**disser.pdf**
+**dissert.pdf**
 
 ---
 
